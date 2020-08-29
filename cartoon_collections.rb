@@ -13,11 +13,9 @@ def long_planeteer_calls(words)
   words.any? { |word| word.length > 4 }
 end
 
-def find_the_cheese(cheese_types)
-  i = 0
+def find_the_cheese(cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  while i < cheese_types.length
-    return cheese_types[i] if array.include?(cheese_types[i])
+  cheese_types.find if array.include?(cheese_types[i])
     i += 1
   end
 end
